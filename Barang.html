@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Manajemen Inventori</title>
+  <link rel="stylesheet" href="Barang.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistem Manajemen Inventori</h1>
+
+    <!-- Form untuk menambah barang -->
+    <div class="form-section">
+      <h2>Tambah Barang</h2>
+      <label for="nama-barang">Nama Barang:</label>
+      <input type="text" id="nama-barang" placeholder="Nama Barang">
+      
+      <label for="stok-barang">Stok Barang:</label>
+      <input type="number" id="stok-barang" placeholder="Stok Barang">
+      
+      <label for="harga-barang">Harga Barang:</label>
+      <input type="number" id="harga-barang" placeholder="Harga Barang">
+      
+      <button id="tambah-barang-btn">Tambah Barang</button>
+    </div>
+
+    <!-- Daftar barang -->
+    <div class="daftar-barang-section">
+      <h2>Daftar Barang</h2>
+      <ul id="daftar-barang"></ul>
+    </div>
+
+    <!-- Form untuk mencari dan menghapus barang -->
+    <div class="action-section">
+      <h2>Cari atau Hapus Barang</h2>
+      <label for="cari-barang">Cari Barang (Nama):</label>
+      <input type="text" id="cari-barang" placeholder="Nama Barang">
+      <button id="cari-barang-btn">Cari Barang</button>
+      
+      <label for="hapus-barang">Hapus Barang (Nama):</label>
+      <input type="text" id="hapus-barang" placeholder="Nama Barang">
+      <button id="hapus-barang-btn">Hapus Barang</button>
+    </div>
+
+    <!-- Output pesan -->
+    <div id="output-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
